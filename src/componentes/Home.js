@@ -10,7 +10,7 @@ import imgLan from '../images/lanFan.jpg';
 const SectionHome = styled.section`
  width:100%;
  height:auto;
- background-color:transparent;
+ background-color:#590000;
  display:flex;
  flex-direction:column;
  align-items:center;
@@ -23,6 +23,27 @@ height:150px;
 background-color: rgba(255,255,255,0.2);
 backdrop-filter:blur(10px);
 transition: all 0.5s;
+display:flex;
+align-items:center;
+justify-content:center;
+
+`
+const PCardName = styled.div`
+font-family: 'Do Hyeon', sans-serif;
+color:#590000;
+text-transform:uppercase;
+transition: all 0.5s;
+font-size:20px;
+
+`
+const PCardInfos = styled.div`
+font-family: 'Do Hyeon', sans-serif;
+color:#590000;
+text-transform:uppercase;
+transition: all 0.5s;
+font-size:15px;
+text-align:center;
+padding-top:10px;
 `
 const DivBelowCard = styled.div`
 width: 250px;
@@ -30,6 +51,9 @@ height:150px;
 background-color: rgba(255,255,255,0.2);
 backdrop-filter:blur(10px);
 transition: all 0.5s;
+font-family: 'Do Hyeon', sans-serif;
+color:#590000;
+
 `
 
 const CardHome = styled.div`
@@ -47,6 +71,9 @@ const CardHome = styled.div`
  &:hover ${DivBelowCard}{
    margin-top:300px;
  }
+ &:hover ${PCardName}{
+  opacity:0;
+}
 ` 
 
 const CardHome2 = styled.div`
@@ -64,6 +91,9 @@ const CardHome2 = styled.div`
  &:hover ${DivBelowCard}{
    margin-top:300px;
  }
+ &:hover ${PCardName}{
+  opacity:0;
+}
 ` 
 const CardHome3 = styled.div`
  width: 250px;
@@ -77,6 +107,9 @@ const CardHome3 = styled.div`
  &:hover ${DivAboveCard}{
     height:0px;
  }
+ &:hover ${PCardName}{
+  opacity:0;
+}
  &:hover ${DivBelowCard}{
    margin-top:300px;
  }
@@ -93,6 +126,10 @@ const CardHome4 = styled.div`
  &:hover ${DivAboveCard}{
     height:0px;
  }
+ &:hover ${PCardName}{
+  opacity:0;
+}
+ 
  &:hover ${DivBelowCard}{
    margin-top:300px;
  }
@@ -112,6 +149,9 @@ const CardHome5 = styled.div`
  &:hover ${DivBelowCard}{
    margin-top:300px;
  }
+ &:hover ${PCardName}{
+  opacity:0;
+}
 ` 
 const CardHome6 = styled.div`
  width: 250px;
@@ -128,16 +168,74 @@ const CardHome6 = styled.div`
  &:hover ${DivBelowCard}{
    margin-top:300px;
  }
+ &:hover ${PCardName}{
+  opacity:0;
+}
 ` 
+
 const HomeNav = ()=>{
   return (
       <SectionHome>
-          <CardHome><DivAboveCard></DivAboveCard> <DivBelowCard></DivBelowCard></CardHome>
-          <CardHome2><DivAboveCard></DivAboveCard> <DivBelowCard></DivBelowCard></CardHome2>
-          <CardHome3><DivAboveCard></DivAboveCard> <DivBelowCard></DivBelowCard></CardHome3>
-          <CardHome4><DivAboveCard></DivAboveCard> <DivBelowCard></DivBelowCard></CardHome4>
-          <CardHome5><DivAboveCard></DivAboveCard> <DivBelowCard></DivBelowCard></CardHome5>
-          <CardHome6><DivAboveCard></DivAboveCard> <DivBelowCard></DivBelowCard></CardHome6>
+          <CardHome>
+            <DivAboveCard>
+              <PCardName>Edward Elric</PCardName>
+            </DivAboveCard> 
+            <DivBelowCard>
+              <PCardInfos>
+              O mais jovem alquimista federal eleito pelo estado militar do país, motivo pelo qual pouco depois recebeu o título de "Fullmetal Alchemist" pelo chefe militar, King Bradley.
+              </PCardInfos>
+            </DivBelowCard>
+          </CardHome>
+          <CardHome2>
+            <DivAboveCard>
+              <PCardName>Scar</PCardName>
+            </DivAboveCard>
+              <DivBelowCard>
+                <PCardInfos>
+                Foi um dos sobreviventes do Massacre de Ishval e desde então ele busca vingança contra o exército. O apelido de Scar vem da grande cicatriz em formato de X em sua testa e ostenta uma tatuagem alquímica conspícua.
+                </PCardInfos>
+              </DivBelowCard>
+          </CardHome2>
+          <CardHome3>
+            <DivAboveCard>
+              <PCardName>Roy Mustang</PCardName>
+            </DivAboveCard> 
+            <DivBelowCard>
+              <PCardInfos>
+                Um Alquimista Federal com a alcunha de "Flame Alchemist". General da Brigada. Usa uma luva especial feita de tecido inflamável, e manipula as chamas livremente usando alquimia.
+             </PCardInfos>
+            </DivBelowCard>
+          </CardHome3>
+          <CardHome4>
+            <DivAboveCard>
+              <PCardName>Olivier Mira Armistrong</PCardName>
+            </DivAboveCard> 
+            <DivBelowCard>
+              <PCardInfos>
+              Também conhecida como Major General Armstrong é a principal herdeira da ilustre família Armstrong, a comandante encarregada da proteção da fronteira norte de Amestris no Forte Briggs 
+              </PCardInfos>
+            </DivBelowCard>
+          </CardHome4>
+          <CardHome5>
+            <DivAboveCard>
+              <PCardName>Ling Yao</PCardName>
+            </DivAboveCard> 
+            <DivBelowCard>
+              <PCardInfos>
+              É o décimo segundo príncipe herdeiro do Império de Xing e líder do clã Yao. Ling se aventura na perigosa jornada entre Xing e Amestris em busca do segredo da imortalidade
+              </PCardInfos>
+            </DivBelowCard>
+            </CardHome5>
+          <CardHome6>
+            <DivAboveCard>
+              <PCardName>Lan Fan</PCardName>
+            </DivAboveCard> 
+            <DivBelowCard>
+              <PCardInfos>
+              é uma retentora do Clã Yao do Império Xing , guarda-costas pessoal do Príncipe Ling Yao e neto do guarda-costas sênior de Ling, Fu . Ela é ferozmente leal ao seu príncipe
+              </PCardInfos>
+            </DivBelowCard>
+            </CardHome6>
       </SectionHome>
   )
 }
