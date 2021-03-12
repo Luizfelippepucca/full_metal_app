@@ -3,6 +3,10 @@ import styled, {keyframes} from 'styled-components';
 import Img from './images/alphonse.jpg';
 import Splash from './images/splash.png';
 import MenuNav from './componentes/menuNav';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import HomeNav from './componentes/Home';
+import AboutNav from './componentes/About';
+import ContactNav from './componentes/Contact';
 
 
 
@@ -31,15 +35,20 @@ transition: left 1s;
 background-blend-mode:luminosity;
 animation: ${slide} 1s linear ;
 ` 
-
-
 function App() {
   return (
-    <div className="App">
-     <Header>
-       <MenuNav></MenuNav>
-     </Header>
-    </div>
+    <Router>
+      <div className="App">
+      <Header>
+        <MenuNav></MenuNav>
+      </Header>
+      <Switch>
+        <Route exact path='/'><HomeNav></HomeNav></Route>
+        <Route  path='/About'><AboutNav></AboutNav></Route>
+        <Route path='/Contact'><ContactNav></ContactNav></Route>
+      </Switch>
+      </div>
+    </Router>
   );
 }
 
