@@ -6,6 +6,7 @@ import imgRoy from '../images/roy.png';
 import imgMira from '../images/mira.jpg';
 import imgLing from '../images/ling.jpg';
 import imgLan from '../images/lanFan.jpg';
+import Rodape from './rodape.js';
 
 const SectionHome = styled.section`
  width:100%;
@@ -174,9 +175,11 @@ const CardHome6 = styled.div`
 ` 
 
 const HomeNav = ()=>{
+  
   return (
+    <>
       <SectionHome>
-          <CardHome>
+          <CardHome className='data-anima'>
             <DivAboveCard>
               <PCardName>Edward Elric</PCardName>
             </DivAboveCard> 
@@ -186,7 +189,7 @@ const HomeNav = ()=>{
               </PCardInfos>
             </DivBelowCard>
           </CardHome>
-          <CardHome2>
+          <CardHome2 className='data-anima'>
             <DivAboveCard>
               <PCardName>Scar</PCardName>
             </DivAboveCard>
@@ -196,7 +199,7 @@ const HomeNav = ()=>{
                 </PCardInfos>
               </DivBelowCard>
           </CardHome2>
-          <CardHome3>
+          <CardHome3 className='data-anima'>
             <DivAboveCard>
               <PCardName>Roy Mustang</PCardName>
             </DivAboveCard> 
@@ -206,7 +209,7 @@ const HomeNav = ()=>{
              </PCardInfos>
             </DivBelowCard>
           </CardHome3>
-          <CardHome4>
+          <CardHome4 className='data-anima'>
             <DivAboveCard>
               <PCardName>Olivier Mira Armistrong</PCardName>
             </DivAboveCard> 
@@ -216,7 +219,7 @@ const HomeNav = ()=>{
               </PCardInfos>
             </DivBelowCard>
           </CardHome4>
-          <CardHome5>
+          <CardHome5 className='data-anima'>
             <DivAboveCard>
               <PCardName>Ling Yao</PCardName>
             </DivAboveCard> 
@@ -226,7 +229,7 @@ const HomeNav = ()=>{
               </PCardInfos>
             </DivBelowCard>
             </CardHome5>
-          <CardHome6>
+          <CardHome6 ClassName='data-anima'>
             <DivAboveCard>
               <PCardName>Lan Fan</PCardName>
             </DivAboveCard> 
@@ -237,6 +240,8 @@ const HomeNav = ()=>{
             </DivBelowCard>
             </CardHome6>
       </SectionHome>
+      <Rodape></Rodape>
+     </> 
   )
 }
 

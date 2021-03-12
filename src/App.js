@@ -24,7 +24,6 @@ const slide = keyframes`
 
 const Header = styled.header`
 width:100%;
-max-width:800px;
 height:400px;
 background-image:  url(${Img}),  url(${Splash});
 object-fit:cover;
