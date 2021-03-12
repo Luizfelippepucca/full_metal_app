@@ -11,11 +11,19 @@ import Rodape from './rodape.js';
 const SectionHome = styled.section`
  width:100%;
  height:auto;
- background-color:#590000;
+ background-color:transparent;
  display:flex;
  flex-direction:column;
  align-items:center;
  justify-content:center;
+ @media(min-width:768px){
+   display:grid;
+   grid-template-columns: 2fr 2fr;
+   grid-template-rows:300px 300px 300px;
+   grid-row-gap:20px;
+   padding-top:20px;
+   padding-bottom:20px;
+ }
  
 ` 
 const DivAboveCard = styled.div`
@@ -27,6 +35,10 @@ transition: all 0.5s;
 display:flex;
 align-items:center;
 justify-content:center;
+@media(min-width:768px){
+  width:300px;
+}
+
 
 `
 const PCardName = styled.div`
@@ -54,6 +66,9 @@ backdrop-filter:blur(10px);
 transition: all 0.5s;
 font-family: 'Do Hyeon', sans-serif;
 color:#590000;
+@media(min-width:768px){
+  width:300px;
+}
 
 `
 
@@ -75,6 +90,11 @@ const CardHome = styled.div`
  &:hover ${PCardName}{
   opacity:0;
 }
+@media(min-width:768px){
+  width:300px;
+  margin-left:40px;
+}
+
 ` 
 
 const CardHome2 = styled.div`
@@ -95,6 +115,9 @@ const CardHome2 = styled.div`
  &:hover ${PCardName}{
   opacity:0;
 }
+@media(min-width:768px){
+  width:300px;
+}
 ` 
 const CardHome3 = styled.div`
  width: 250px;
@@ -114,6 +137,10 @@ const CardHome3 = styled.div`
  &:hover ${DivBelowCard}{
    margin-top:300px;
  }
+ @media(min-width:768px){
+  width:300px;
+  margin-left:40px;
+}
 ` 
 const CardHome4 = styled.div`
  width: 250px;
@@ -134,6 +161,10 @@ const CardHome4 = styled.div`
  &:hover ${DivBelowCard}{
    margin-top:300px;
  }
+ @media(min-width:768px){
+  width:300px;
+}
+ 
 ` 
 const CardHome5 = styled.div`
  width: 250px;
@@ -153,6 +184,10 @@ const CardHome5 = styled.div`
  &:hover ${PCardName}{
   opacity:0;
 }
+@media(min-width:768px){
+  width:300px;
+  margin-left:40px;
+}
 ` 
 const CardHome6 = styled.div`
  width: 250px;
@@ -171,6 +206,9 @@ const CardHome6 = styled.div`
  }
  &:hover ${PCardName}{
   opacity:0;
+}
+@media(min-width:768px){
+  width:300px;
 }
 ` 
 

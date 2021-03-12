@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom';
 const styleUL = {
     height:'200px',
     
+    
 }
 const animaMenu = keyframes`
   from {
@@ -16,15 +17,25 @@ const animaMenu = keyframes`
 
   to {
    height:${styleUL};
-  }`
-
+  }
+ 
+`
 const Menu = styled.nav`
 width:100%;
-height:400px;
+height:300px;
 background-color:transparent;
 display flex;
 align-items:center;
 justify-content:center;
+@media(min-width:768px){
+    width:60%;
+    grid-column-start:1;
+    grid-column-end:3;
+    margin-left:300px;
+   grid-row-start:1;
+   margin-top:129px;
+  }
+
 ` 
 const MenuItem = styled.ul`
 width:90%;
@@ -39,6 +50,7 @@ border:2px solid transparent;
 background-clip:padding-box;
 transition: all 0.3s;
 animation:${animaMenu} 1s linear;
+
 ` 
 
 const ItensMenu = styled.li`
