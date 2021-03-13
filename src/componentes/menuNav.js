@@ -3,6 +3,7 @@ import styled, {keyframes} from 'styled-components';
 import {Home} from '@styled-icons/ionicons-solid/Home';
 import {StarOfDavid} from '@styled-icons/fa-solid/StarOfDavid';
 import {Contact } from '@styled-icons/boxicons-solid/Contact';
+
 import {Link} from 'react-router-dom';
 
 const styleUL = {
@@ -92,6 +93,7 @@ const IconMenu3 = styled(Contact)`
  color:#590000;
  margin-left 15px;
 `
+
 
 const styleLink = {
 paddingLeft:'10px',
