@@ -15,6 +15,10 @@ padding-top:10px;
 display:flex;
 align-items:center;
 justify-content:center;
+@media(min-width:1440px){
+  background-repeat:round;
+  
+ }
 
 `
 const DivRodape = styled.div`
@@ -27,6 +31,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
+
 `
 const TitleRodape = styled.h2`
 width:100%;

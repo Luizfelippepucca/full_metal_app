@@ -24,6 +24,10 @@ const SectionHome = styled.section`
    padding-top:20px;
    padding-bottom:20px;
  }
+ @media(min-width:1440px){
+  grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows:300px 300px ;
+ }
  
 ` 
 const DivAboveCard = styled.div`
@@ -94,6 +98,9 @@ const CardHome = styled.div`
   width:300px;
   margin-left:40px;
 }
+@media(min-width:1024px){
+  margin-left:100px;
+ }
 
 ` 
 
@@ -118,6 +125,9 @@ const CardHome2 = styled.div`
 @media(min-width:768px){
   width:300px;
 }
+@media(min-width:1024px){
+  margin-left:100px;
+ }
 ` 
 const CardHome3 = styled.div`
  width: 250px;
@@ -141,6 +151,9 @@ const CardHome3 = styled.div`
   width:300px;
   margin-left:40px;
 }
+@media(min-width:1024px){
+  margin-left:100px;
+ }
 ` 
 const CardHome4 = styled.div`
  width: 250px;
@@ -164,6 +177,9 @@ const CardHome4 = styled.div`
  @media(min-width:768px){
   width:300px;
 }
+@media(min-width:1024px){
+  margin-left:100px;
+ }
  
 ` 
 const CardHome5 = styled.div`
@@ -188,6 +204,9 @@ const CardHome5 = styled.div`
   width:300px;
   margin-left:40px;
 }
+@media(min-width:1024px){
+  margin-left:100px;
+ }
 ` 
 const CardHome6 = styled.div`
  width: 250px;
@@ -210,6 +229,9 @@ const CardHome6 = styled.div`
 @media(min-width:768px){
   width:300px;
 }
+@media(min-width:1024px){
+  margin-left:100px;
+ }
 ` 
 
 const HomeNav = ()=>{

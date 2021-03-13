@@ -12,8 +12,6 @@ import HomeNav from './componentes/Home';
 import AboutNav from './componentes/About';
 import ContactNav from './componentes/Contact';
 
-
-
 const slide = keyframes`
   from {
    opacity:0;
@@ -47,6 +45,9 @@ justify-content:center;
   grid-template-rows:200px 200px ;
   grid-gap:10px;
 }  
+@media(min-width:1024px){
+ background-position-y:inherit;
+}
 ` 
 const TitleHeader = styled.h1`
 width:90%;
@@ -86,6 +87,15 @@ text-align:center;
   align-items:center;
   justify-content:flex-start;
 }
+@media(min-width:1024px){
+  width:375px;
+  justify-content:center;
+ }
+ @media(min-width:1440px){
+  width:529px;
+  font-size:20px;
+ }
+
 `
 const DivIconHeader = styled.div`
 width:100%;

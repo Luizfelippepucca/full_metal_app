@@ -36,8 +36,32 @@ justify-content:center;
    grid-row-start:1;
    margin-top:129px;
   }
+  @media(min-width:1024px){
+    margin-left:388px;
+   }
+   @media(min-width:1440px){
+    margin-left:565px;
+   }
 
 ` 
+const NameHeader = styled.div`
+width:60%;
+height:50px;
+background-color:transparent;
+font-family: 'Do Hyeon', sans-serif;
+display:flex;
+align-items:center;
+justify-content:center;
+display:none;
+font-size:25px;
+color:#590000;
+letter-spacing:4px;
+text-transform:uppercase;
+@media(min-width:1440px){
+    display:flex;
+    
+   }
+`
 const MenuItem = styled.ul`
 width:90%;
 height:0px;
@@ -51,7 +75,11 @@ border:2px solid transparent;
 background-clip:padding-box;
 transition: all 0.3s;
 animation:${animaMenu} 1s linear;
-
+@media(min-width:1440px){
+    flex-direction:row;
+    align-items:flex-start;
+    flex-wrap:wrap;
+   }
 ` 
 
 const ItensMenu = styled.li`
@@ -68,6 +96,15 @@ const ItensMenu = styled.li`
  &:Hover{
     opacity:1;
 }
+@media(min-width:1440px){
+    width:30%;
+    border-left: 1px solid  #590000;
+    border-bottom: 0px solid  #590000;
+    padding-top:20px;
+    font-size:22px;
+    
+}
+
 ` 
 const TitleMenu = styled.h3`
 padding-left:10px;
@@ -122,6 +159,7 @@ const MenuNav = () => {
                 <ItensMenu><IconMenu></IconMenu><TitleMenu><Link to='/' style={styleLink}>Home</Link></TitleMenu></ItensMenu>
                 <ItensMenu><IconMenu2></IconMenu2><TitleMenu><Link to='/About' style={styleLink}>About</Link></TitleMenu></ItensMenu>
                 <ItensMenu><IconMenu3></IconMenu3><TitleMenu><Link to='/Contact' style={styleLink}>Contact</Link></TitleMenu></ItensMenu>
+                <NameHeader>Alphonse Elric</NameHeader>
             </MenuItem>}
            
         </Menu>
